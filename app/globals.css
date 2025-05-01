@@ -1,11 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
 
+
+@theme {
+  --text-title: 40px; 
+  --text-bigtitle: 36px; 
+  --text-para: 20px; 
+  --text-small: 12px;
+  
+}
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ffffff;
+  --font-small:12px
 }
 
-@theme inline {
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -14,13 +24,104 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", sans-serif;
+}
+.bg_lightgrey{
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0.07) 0%, rgba(115, 115, 115, 0.07) 100%);
+
+
+}
+.react-datepicker__view-calendar-icon input {
+  padding: 6px 10px 5px 34px !important;
+  max-width: 120px;
+}
+.react-datepicker__input-container .react-datepicker__calendar-icon{
+  padding: 10px !important;
+}
+input:focus-visible{
+  outline: none ;
+}
+.green_shadow{
+  box-shadow: 2px 0px 20px 6px rgba(0, 166, 83, 0.20);
+}
+.bg_gradiant_main{ 
+background: linear-gradient(180deg, rgba(217, 217, 217, 0.07) 0%, rgba(115, 115, 115, 0.07) 100%);
+box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(17px);
+}
+.submitted_shadow{
+  box-shadow: -1px 3px 4px 0px rgba(186, 186, 186, 0.25) inset, 0px 0px 20px 0px rgba(234, 171, 8, 0.20); 
+}
+ .recieve_shadow{
+  box-shadow: -1px 3px 4px 0px rgba(186, 186, 186, 0.25) inset, 0px 1px 20px 0px rgb(3 152 77 / 33%);
+ }
+ .cost_shadow{
+  box-shadow: -1px 3px 4px 0px rgba(186, 186, 186, 0.25) inset, 0px 1px 20px 0px rgba(152, 3, 3, 0.33);
+ }
+ .submit_icon{
+  border-radius: 2px;
+background: linear-gradient(180deg, #EAAB08 0%, #543F09 100%);
+box-shadow: -1px 3px 4px 0px rgba(186, 186, 186, 0.25) inset, 0px 4px 20px 0px rgba(234, 171, 8, 0.20);
+ }
+ .recived_icon{
+  border-radius: 2px;
+background: linear-gradient(180deg, #00A653 0%, #073C21 100%);
+box-shadow: -1px 3px 4px 0px rgba(186, 186, 186, 0.25) inset, 0px 4px 20px 0px rgba(35, 117, 207, 0.20);
+ }
+ .budget_icon{
+  border-radius: 2px;
+  background: linear-gradient(180deg, #D6261A 0%, #430C08 100%);
+  box-shadow: -1px 3px 4px 0px rgba(186, 186, 186, 0.25) inset, 0px 4px 20px 0px rgba(35, 117, 207, 0.20); 
+}
+
+ .radial_div{ 
+  filter: blur(207px);
+ }
+ .swiper-pagination{
+  z-index: 999!important;
+  bottom: 0px !important;
+  text-align: left !important;
+  padding: 10px 10px !important;
+ }
+ .swiper-pagination-bullet{
+  background:white !important;
+ }
+ .swiper-pagination-bullet-active{
+  background:white !important;
+ }
+ .value_card{
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0.07) 0%, rgba(115, 115, 115, 0.07) 100%);
+
+backdrop-filter: blur(17px);
+ }
+ .targetCrd{
+  border-radius: 10px;
+ 
+background:url('../public/target.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
+box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.15);
+backdrop-filter: blur(17px);
+ }
+ .active_menu{
+  border-radius: 99px;
+  border: 1px solid #ffffff66;
+  background: #00A551;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 20px 0px rgba(0, 166, 83, 0.30);
+  width: 45px;
+  height: 45px;
+  display: flex
+;
+  align-items: center;
+  justify-content: center;
 }
