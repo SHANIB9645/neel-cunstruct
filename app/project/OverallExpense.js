@@ -59,10 +59,10 @@ function OverallExpense() {
         },
       }; 
   return (
-    <div className="p-4 rounded-[10px] bg-[#d9d9d903] border border-[#ffffff1a]">
+    <div className="p-4 rounded-[10px] bg-[#d9d9d903] border border-[#ffffff1a] h-full">
     <h2 className="font-semibold text-[14px] mb-8">Overall Expense Status</h2>
     <div className='flex '>
-        <div className='relative'>
+        <div className='relative max-w-[260px]'>
             <div className='flex w-full justify-center items-center flex-col h-[80%] z-[-1] absolute'>
                 <h4 className=''>Total Expenses</h4>
                 <p className='text-[24px] font-semibold'>136,245,140</p>

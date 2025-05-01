@@ -4,6 +4,7 @@ import Header from './components/Header'
 import TopBar from './components/TopBar'
 import ProjectDetail from './project/ProjectDetail'
 import ProjectRight from './project/ProjectRight'
+import ProjectManager from './project/ProjectManager'
 
 function Homepage() {
   return (
@@ -21,6 +22,7 @@ function Homepage() {
                     <ProjectRight />
                 </div>
           </div>
+          <ProjectManager/>
          </div>
     </section>
   )

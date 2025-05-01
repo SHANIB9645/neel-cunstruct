@@ -42,6 +42,7 @@ body {
 .react-datepicker__view-calendar-icon input {
   padding: 6px 10px 5px 34px !important;
   max-width: 120px;
+  font-size: 14px;
 }
 .react-datepicker__input-container .react-datepicker__calendar-icon{
   padding: 10px !important;
@@ -124,4 +125,92 @@ backdrop-filter: blur(17px);
 ;
   align-items: center;
   justify-content: center;
+}
+.managerCard{
+  transition-duration: .5s;
+  overflow: hidden;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.12) 100%);
+backdrop-filter: blur(17px);
+}
+.PrifleSwiper .swiper-pagination{
+  position: inherit !important;
+  padding: 0 !important;
+}
+.managerGalery{
+  transform: translateY(110%);  
+  height: 0; 
+  opacity: 0;
+  transition-duration: .5s;
+}
+.managerCard:hover .managerGalery{
+  margin-top: 8px;
+  transform: translateY(0%); 
+  height: auto;
+  opacity: 1;
+  transition-duration: .5s;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7d7e7dd2;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00A653;
+}
+.submiteHover{
+  opacity: 0;
+  border-radius: 10px;
+border: 1px solid #ffffff1a;
+background: rgba(0, 0, 0, 0.26);
+box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(17px);
+position: absolute;
+    left: -12px;
+    top: 26px;
+    padding: 5px 8px;
+}
+.staus_card:hover .submiteHover{
+  opacity: 1;
+  transition-duration: 1s;
+}
+.react-datepicker__header{
+  background-color: #000000 !important;
+  border-bottom: 1px solid #ffffff1a !important;
+  color: white !important;
+}
+.react-datepicker__month-container{
+  background-color: #000000;
+}
+.react-datepicker__month .react-datepicker__month-text, .react-datepicker__month .react-datepicker__quarter-text{
+  color: white;
+}
+.react-datepicker__day--keyboard-selected, .react-datepicker__month-text--keyboard-selected, .react-datepicker__quarter-text--keyboard-selected, .react-datepicker__year-text--keyboard-selected{
+  border-radius: 1.3rem !important;
+  background-color: rgb(32 163 86) !important; 
+  padding: 6px;
+}
+.react-datepicker__month .react-datepicker__month-text, .react-datepicker__month .react-datepicker__quarter-text{
+  padding: 6px;
+}
+.react-datepicker-popper .react-datepicker{
+    border: 1px solid #ffffff1a !important;
+    background-color: #000000 !important;
+}
+.react-datepicker-popper .react-datepicker__triangle {
+  stroke: #1b1b1b !important;
+}
+.react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle {
+  fill: #000000 !important;
+  color: #000000 !important;
 }

@@ -54,17 +54,16 @@ const options = {
         position: 'bottom',       // 'top', 'left', 'bottom', 'right'
         align: 'center',          // 'start', 'center', 'end'
         labels: {
-          color: '#333',          // Font color
+          color: '#FFFFFFB2',          // Font color
           font: {
-            size: 12,             // Font size
-            family: 'Arial',      // Font family
-            weight: 'bold',       // 'normal', 'bold', etc.
+            size: 12,             // Font size 
+            weight: 'normal',       // 'normal', 'bold', etc.
           },
-          boxWidth: 5,         // Decrease the width of the color box
-          boxHeight: 5,        // Width of the color box
+          boxWidth: 10,         // Decrease the width of the color box
+          boxHeight: 10,        // Width of the color box
           padding:30 ,            // Padding between legend items
           usePointStyle: true,    // Use circle instead of square
-          pointStyle: 'circle',   // 'circle', 'rect', 'line', etc.
+          pointStyle: 'rect',   // 'circle', 'rect', 'line', etc.
         }
       }
   }

@@ -2,7 +2,7 @@ import React from 'react'
 
 function ProjectInformation() {
   return (
-    <div className='px-3 py-4'>
+    <div className='px-4 py-4'>
         <ul className='border-b border-[#3F44504D] pb-4'>
             <li className='flex items-start mb-4 '>
                 <div className='text-[#FFFFFF80] text-[15px] w-[250px] '>Contract Number</div>

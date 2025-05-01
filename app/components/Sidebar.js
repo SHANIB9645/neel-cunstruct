@@ -24,16 +24,16 @@ function Sidebar() {
   return (
     <div className="fixed left-0 top-0 w-[80px] h-screen bg-[#3737376E] px-2 py-4 flex flex-col items-center justify-between overflow-y-auto">
       <div>
-        <Link href={"/"}>
+        <Link href={"/"} className="flex justify-center">
           <Image
             src={"/logo.png"}
             alt="logo"
-            width={400}
-            height={400}
-            className="w-auto"
+            width={1000}
+            height={1000}
+            className="w-12"
           />
         </Link>
-        <ul className="flex flex-col gap-6 mt-8 items-center justify-center">
+        <ul className="flex flex-col gap-6 mt-6 items-center justify-center">
       {menuItems.map((item, index) => (
         <li key={index} className={`cursor-pointer ${item.active ? 'active_menu' : ''}`}>
           <Link href={item.href}>
@@ -49,8 +49,8 @@ function Sidebar() {
       ))}
     </ul>
       </div>
-      <div>
-      <ul className="flex flex-col gap-6 mt-8 items-center justify-center w-full">
+      <div className="mt-10">
+      <ul className="flex flex-col gap-6   items-center justify-center w-full">
       
         <li>
           <div className="cursor-pointer">

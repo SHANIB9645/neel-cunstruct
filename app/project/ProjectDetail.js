@@ -19,7 +19,7 @@ function ProjectDetail() {
         <div className=' '>
            <ProjectInformation />
         </div> 
-        <div className='flex gap-4 px-3 pb-4'>
+        <div className='flex gap-4 px-4 pb-4'>
             <div className=' '>
              <PaymentStatus />  
             </div>
@@ -28,7 +28,7 @@ function ProjectDetail() {
               
             </div>
         </div>
-        <div className='px-3 pb-4'>
+        <div className='px-4 pb-4'>
             <IncomeChart />
         </div>
     </div>
