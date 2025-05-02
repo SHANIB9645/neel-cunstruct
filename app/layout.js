@@ -3,7 +3,7 @@ import "./globals.css";
 
 
 export const metadata = {
-  title: "Neal Cunstruct",
+  title: "Nael Cunstruct",
   description: "Constructing the Future",
 };
 
