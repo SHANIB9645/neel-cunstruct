@@ -4,10 +4,10 @@ import React from "react";
 
 const menuItems = [
     { href: "/speed", src: "/svg/speed.svg", alt: "speed", active: false },
-    { href: "/corporate", src: "/svg/corporate.svg", alt: "corporate", active: true },
+    { href: "/", src: "/svg/corporate.svg", alt: "corporate", active: false },
     { href: "/receipt", src: "/svg/receipt.svg", alt: "receipt" , active: false },
     { href: "/badge", src: "/svg/badge.svg", alt: "badge" , active: false},
-    { href: "/person_book", src: "/svg/person_book.svg", alt: "person_book" , active: false},
+    { href: "/appraisal", src: "/svg/person_book.svg", alt: "person_book" , active: true},
     { href: "/lab_profile", src: "/svg/lab_profile.svg", alt: "lab_profile", active: false },
     { href: "/account_balance_wallet", src: "/svg/account_balance_wallet.svg", alt: "account_balance_wallet", active: false },
     { href: "/person_check", src: "/svg/person_check.svg", alt: "person_check", active: false },
